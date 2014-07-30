@@ -5,7 +5,7 @@
 #-------------------------------------------------
 
 QT       += core gui
-
+QT += network
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
 TARGET = ControlXiaomi
@@ -13,8 +13,13 @@ TEMPLATE = app
 
 
 SOURCES += main.cpp\
-        mainwindow.cpp
+        mainwindow.cpp \
+    filesender.cpp \
+    hacker.cpp
 
-HEADERS  += mainwindow.h
+HEADERS  += mainwindow.h \
+    filesender.h \
+    hacker.h \
+    config.h
 
 FORMS    += mainwindow.ui
